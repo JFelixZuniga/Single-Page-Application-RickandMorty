@@ -39,15 +39,13 @@ module.exports = {
   plugins: [
     //webpack-plugin que nos permite trabajar con los archivos html
     //instanciamos en la parte superior de este archivo
-    new HtmlWebpackPlugin([
-      {
-        //como inyectamos en un archivo html un valor
-        inject: true,
-        //donde se encuentra en el template ppal
-        template: "./public/index.html",
-        //a donde vamos a guardar este archivo y podemos darle un nombre
-        filename: "./index.html",
-      },
-    ]),
+    new HtmlWebpackPlugin({
+      //como inyectamos en un archivo html un valor
+      inject: true,
+      //donde se encuentra en el template ppal
+      template: "./public/index.html",
+      //a donde vamos a guardar este archivo y podemos darle un nombre
+      filename: "./index.html",
+    }),
   ],
 };

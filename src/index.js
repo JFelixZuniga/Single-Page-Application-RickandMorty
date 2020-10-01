@@ -10,4 +10,7 @@ Desventajas
 - No es recomendable aplicarlas para grandes aplicaciones (Aplicación grande => más de 1000 usuarios y más de 50 secciones en la página).
 */
 
-console.log("Hola Hola!");
+import router from './routes';
+
+window.addEventListener("load", router);
+window.addEventListener('hashchange', router)
